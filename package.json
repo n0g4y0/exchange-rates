@@ -1,0 +1,26 @@
+{
+  "name": "exchange-rates",
+  "version": "1.0.0",
+  "description": "system that show international currency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n0g4y0/exchange-rates.git"
+  },
+  "author": "n0g4y0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n0g4y0/exchange-rates/issues"
+  },
+  "homepage": "https://github.com/n0g4y0/exchange-rates#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.1"
+  }
+}
