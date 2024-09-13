@@ -1,2 +1,2 @@
 # exchange-rates
-muestra los tipos que cambios de monedas que existen en el mundo y sus equivalencias
+show the types of currencies that exist around the world and their equivalencies
