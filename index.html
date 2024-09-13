@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>exchange</title>
+
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	</head>
+	<body>
+		
+		<main class="container-fluid">
+			<article class="px-4 pt-5 my-5 text-center border-bottom">
+				<h1 class="display-4 fw-bold text-body-emphasis">Conversor de Divisas</h1>
+				<div>
+					<label class="lead mb-4" for="select-base">Elija una base</label>
+				</div>
+				<div>
+					<select class="lead mb-4" name="select-base" id="select-base" required></select>
+				</div>
+				<div>
+					<label class="lead mb-4" for="">Elija una fecha</label>
+				</div>
+				<div>
+					<input class="lead mb-4" type="date" id="date" required>
+				</div>
+				<div>
+					<button class="btn btn-primary btn-lg px-4 me-sm-3" type="button" id="btn-show">Mostrar</button>
+					<button class="btn btn-primary btn-lg px-4 me-sm-3" type="button" id="btn-show-coins">Mostrar Monedas</button>
+				</div>
+			</article>
+		
+		<section>
+			<ul class=" px-2 text-center" >
+				<li class="text-center" ></li>
+			</ul>
+		</section>
+		</main>
+		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
