@@ -11,3 +11,25 @@ const $CURRENCIES = ["AUD","BGN","BRL","CAD","CHF","CNY","CZK","DKK","GBP","HKD"
 
 
 
+$CURRENCIES.forEach(i=> {
+    $select.append(new Option(i,i));
+})
+
+
+
+$btnShow.onclick = function(e){
+
+    bringData($select.val(), $inputDate.val());
+
+    return false;
+}
+
+$btnShowCoins.onclick = function(e){
+    $("ul").html('');
+
+        $CURRENCIES.forEach(currency => {
+        $("ul").append($(`<li>${currency}</li>`));
+        });
+}
+
+
