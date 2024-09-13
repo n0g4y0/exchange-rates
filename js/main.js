@@ -33,3 +33,20 @@ $btnShowCoins.onclick = function(e){
 }
 
 
+function bringData(base, date){
+    
+    fetch(`${URL}/${date}?from=${base}`)
+    .then(respuesta => respuesta.json())
+    .then(respuestaJSON => {
+        
+
+        $("ul").html('');
+
+        Object.keys(respuestaJSON.rates).forEach(currency => {
+        $("ul").append($(`<li>${currency}: ${respuestaJSON.rates[currency]}</li>`));
+        });
+    })
+    .catch(error => console.error("FALLÓ", error));
+    
+};
+
